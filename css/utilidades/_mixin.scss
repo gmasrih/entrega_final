@@ -1,0 +1,8 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin padd_top ($padding) {
+    padding-top: $padding;
+}

@@ -1,3 +1,5 @@
+@import '../utilidades/mixin';
+
 /* Reset de CSS */
 * {
     margin: 0;
@@ -26,7 +28,7 @@ h2 {
         color: $flash_color;
 }
 .prod_cont {
-    display: flex;
+    @include flex;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -49,8 +51,7 @@ main {
         }
     }
     .container_gm {
-        display: flex;
-        justify-content: center;
+        @include flex;
 
         .juntos {
             background-color: $box_juntos;
@@ -68,16 +69,15 @@ main {
             color: $gray_text;
         }
         form {
-            padding-top: 20px;
+            @include padd_top(20px);
             textarea {
                 margin-bottom: 20px;
             }
         }
     }
-    .process_cont {  
-        display: flex;
+    .process_cont {
+        @include flex;
         flex-wrap: wrap;
-        justify-content: center;
         width: 90%;
         background-color: $bg_color;
         
@@ -107,15 +107,15 @@ main {
             }
     }
     form p {
-        padding-top: 20px;
+        @include padd_top(20px);
     }
     div form div div {
-        padding-top: 20px;
+        @include padd_top(20px);
     }
 }
 
 .lbutton {
-    background-color: white;
+    background-color: $white_color;
     display: block;
     color: $flash_color;
     width: 130px;
@@ -130,7 +130,7 @@ main {
 }
 .lbutton:hover {
     background-color:$flash_color ;
-    color: white;
+    color: $white_color;
 }
 
 footer {

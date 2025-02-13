@@ -30,6 +30,7 @@ h2 {
 
 .prod_cont {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -75,8 +76,8 @@ main .container_gm form textarea {
 }
 main .process_cont {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   width: 90%;
   background-color: #C7CBCC;
 }
